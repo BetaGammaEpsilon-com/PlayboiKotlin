@@ -37,6 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <Button
         android:id="@+id/joshButton"
         android:layout_width="wrap_content"
@@ -45,4 +46,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:backgroundTint="#00AF00"
+        android:text="dans world"
+        app:layout_constraintStart_toEndOf="@id/textView"
+        app:layout_constraintTop_toTopOf="@id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

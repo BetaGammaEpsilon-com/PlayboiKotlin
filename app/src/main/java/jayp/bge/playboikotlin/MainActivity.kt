@@ -1,9 +1,9 @@
 package jayp.bge.playboikotlin
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(this@MainActivity, JoshActivity::class.java)
             startActivity(i)
         }
-
 
 
         val robbieButton: Button = findViewById(R.id.robbieButton)
@@ -33,6 +32,12 @@ class MainActivity : AppCompatActivity() {
 
             val intent = Intent(this, ZebActivity::class.java)
 
+            startActivity(intent)
+        }
+
+        val danButton: Button = findViewById(R.id.dan_button)
+        danButton.setOnClickListener {
+            val intent = Intent(this, DanActivity::class.java)
             startActivity(intent)
         }
     }
