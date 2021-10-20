@@ -10,6 +10,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val robbieButton: Button = findViewById(R.id.robbieButton)
+        robbieButton.setOnClickListener {
+
+            val intent = Intent(this, RobTivity::class.java)
+            startActivity(intent)
+
+        }
+
+
         val zebButton: Button = findViewById(R.id.zebButton)
         zebButton.setOnClickListener {
 

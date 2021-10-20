@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlayboiKotlin">
         <activity
+            android:name=".RobTivity"
+            android:exported="false" />
+        <activity
             android:name=".ZebActivity"
             android:exported="false" />
         <activity
