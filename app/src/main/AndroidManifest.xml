@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlayboiKotlin">
         <activity
-            android:name=".DanActivity"
+            android:name=".dan.DanActivity"
             android:exported="true" />
         <activity
             android:name=".JoshActivity"
