@@ -7,18 +7,17 @@
     tools:context=".dan.DanActivity">
 
     <TextView
-        android:id="@+id/dan_textview"
+        android:id="@+id/increment_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="serif-monospace"
-        android:text="jayp"
+        android:text="@string/jayp"
         android:textAllCaps="true"
         android:textColor="#006F00"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/increment_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/increment_button"
@@ -26,10 +25,21 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:backgroundTint="#00AF00"
-        android:text="press me to increment!"
+        android:text="@string/press_me_to_increment"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dan_textview" />
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/delayed_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textColor="#006F00"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/increment_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
