@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ZebActivity">
+    tools:context=".zeb.ZebActivity">
 
     <TextView
         android:id="@+id/bottomText"
@@ -25,5 +25,45 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/middleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="middle text"
+        app:layout_constraintBottom_toTopOf="@+id/bottomText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topText"></TextView>
+
+
+    <Button
+        android:id="@+id/bottomerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="even bottomer button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomText" />
+
+    <Button
+        android:id="@+id/topperButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="even topper button"
+        app:layout_constraintBottom_toTopOf="@+id/topText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressThat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bottomText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middleText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@
             android:name=".robbie.RobTivity"
             android:exported="false" />
         <activity
-            android:name=".ZebActivity"
+            android:name=".zeb.ZebActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
