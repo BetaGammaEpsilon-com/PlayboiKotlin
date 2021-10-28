@@ -13,8 +13,7 @@ class DanActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDanBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
         setOnClickListeners()
         viewModel.viewStateLiveData.observe(this) {
             observeViewState(it)
@@ -22,7 +21,10 @@ class DanActivity : AppCompatActivity() {
     }
 
     private fun observeViewState(viewState: DanMainViewState) {
-        binding.danTextview.text = "Press count: ${viewState.buttonCount}"
+        with(binding) {
+            incrementTextview.text = "Press count: ${viewState.buttonCount}"
+            viewState.delayedMessage?.let { delayedTextview.text = it }
+        }
     }
 
     private fun setOnClickListeners() {
