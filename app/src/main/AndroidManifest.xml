@@ -13,13 +13,13 @@
             android:name=".dan.DanActivity"
             android:exported="true" />
         <activity
-            android:name=".JoshActivity"
+            android:name=".josh.JoshActivity"
             android:exported="false" />
         <activity
-            android:name=".RobTivity"
+            android:name=".robbie.RobTivity"
             android:exported="false" />
         <activity
-            android:name=".ZebActivity"
+            android:name=".zeb.ZebActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
