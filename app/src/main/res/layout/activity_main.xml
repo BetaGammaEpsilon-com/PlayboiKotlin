@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <Button
         android:id="@+id/robbieButton"
         android:layout_width="250dp"
@@ -22,7 +21,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Zeb World!"
+        android:text="@string/zeb_world"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -32,7 +31,7 @@
         android:id="@+id/zebButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Zeb Button"
+        android:text="@string/zeb_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +41,7 @@
         android:id="@+id/joshButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Josh Button"
+        android:text="@string/josh_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent" />
@@ -53,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:backgroundTint="#00AF00"
-        android:text="robbie smells"
+        android:text="@string/robbie_smells"
         app:layout_constraintStart_toEndOf="@id/textView"
         app:layout_constraintTop_toTopOf="@id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

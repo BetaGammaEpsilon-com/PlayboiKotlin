@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">PlayboiKotlin</string>
     <string name="robbie">ROBBIE</string>
+    <string name="press_me_to_increment">press me to increment!</string>
+    <string name="jayp">jayp</string>
+    <string name="robbie_smells">robbie smells</string>
+    <string name="josh_button">Josh Button</string>
+    <string name="zeb_button">Zeb Button</string>
+    <string name="zeb_world">Zeb World!</string>
 </resources>
