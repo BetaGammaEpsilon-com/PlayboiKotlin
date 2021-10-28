@@ -4,17 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RobTivity">
+    tools:context=".robbie.RobTivity">
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="25dp"
-        android:text="rob screen"
+        android:id="@+id/textView2"
+        android:layout_width="247dp"
+        android:layout_height="119dp"
+        android:text="@string/rob_screen"
         android:textAlignment="center"
         android:textColor="@color/purple_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/new_robbie_button"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:shadowColor="@color/black"
+        android:text="clicked 0 times"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_robbie_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
