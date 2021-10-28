@@ -16,7 +16,7 @@
             android:name=".JoshActivity"
             android:exported="false" />
         <activity
-            android:name=".RobTivity"
+            android:name=".robbie.RobTivity"
             android:exported="false" />
         <activity
             android:name=".ZebActivity"
