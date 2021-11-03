@@ -4,5 +4,6 @@ data class ZebViewState(
     val clicks: Int = 0,
     val his: String = "",
     val tester: String = "loading...",
-    val loading: Boolean = false
+    val loading: Boolean = false,
+    val validLogin: Boolean = false
 )
