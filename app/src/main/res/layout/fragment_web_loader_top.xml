@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/web_loader_textview"
+        android:text="lorem ipsum"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/web_loader_button"
+        app:layout_constraintTop_toBottomOf="@id/web_loader_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="heeeeeeres johhny!"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/web_loader_button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/white"
+        android:hint="top text argument"
+        android:textColorHint="#60FFFFFF"
+        android:id="@+id/top_text_argument_edittext"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/top_text_argument_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/white"
+        android:hint="bottom text argument"
+        android:textColorHint="#60FFFFFF"
+        android:id="@+id/bottom_text_argument_edittext"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

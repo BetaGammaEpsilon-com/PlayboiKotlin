@@ -3,7 +3,9 @@ package jayp.bge.playboikotlin.dan
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import jayp.bge.playboikotlin.dan.fragments.DanFragmentsActivity
 import jayp.bge.playboikotlin.databinding.ActivityDanBinding
+import android.content.Intent as Intent
 
 class DanActivity : AppCompatActivity() {
 
@@ -35,6 +37,10 @@ class DanActivity : AppCompatActivity() {
             incrementButton.setOnLongClickListener {
                 viewModel.onButtonHeld()
                 true
+            }
+            goToFragmentsButton.setOnClickListener {
+                val intent = Intent(this@DanActivity, DanFragmentsActivity::class.java)
+                startActivity(intent)
             }
         }
     }
