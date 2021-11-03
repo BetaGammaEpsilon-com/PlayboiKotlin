@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/web_loader"
+    app:startDestination="@id/fragment_web_loader_top">
+
+    <fragment
+        android:name="jayp.bge.playboikotlin.dan.fragments.webloader.WebLoaderSubFragment"
+        android:id="@+id/fragment_web_loader_sub"
+        tools:layout="@layout/fragment_web_loader_sub">
+        <argument
+            android:name="topText"
+            app:argType="string"
+            app:nullable="false"/>
+        <argument
+            android:name="bottomText"
+            app:argType="string"
+            app:nullable="false"/>
+    </fragment>
+
+    <fragment
+        android:name="jayp.bge.playboikotlin.dan.fragments.webloader.WebLoaderTopFragment"
+        android:id="@+id/fragment_web_loader_top"
+        tools:layout="@layout/fragment_web_loader_top">
+        <action
+            android:id="@+id/action_fragment_web_loader_top_to_fragment_web_loader_sub"
+            app:destination="@id/fragment_web_loader_sub"/>
+    </fragment>
+
+</navigation>

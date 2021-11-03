@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/web_loader"
+        android:icon="@drawable/ic_web"
+        android:title="@string/title_web_loader" />
+    <item
+        android:id="@+id/list_o_rama"
+        android:icon="@drawable/ic_alist"
+        android:title="@string/title_list_o_rama" />
+    <item
+        android:id="@+id/chatty"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/title_chatty" />
+
+</menu>

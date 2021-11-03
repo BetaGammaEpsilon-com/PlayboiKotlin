@@ -9,4 +9,10 @@
     <string name="zeb_world">Zeb World!</string>
     <string name="new_button">new button</string>
     <string name="rob_screen">rob screen</string>
+    <string name="go_to_fragments">go to fragments</string>
+    <string name="title_web_loader">Web Loader</string>
+    <string name="title_list_o_rama">List-o-rama</string>
+    <string name="title_chatty">Chatty</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
