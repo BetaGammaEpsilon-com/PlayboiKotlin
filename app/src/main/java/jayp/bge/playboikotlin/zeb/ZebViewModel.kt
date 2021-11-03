@@ -33,6 +33,14 @@ class ZebViewModel : ViewModel() {
         }
     }
 
+    fun onLoginButtonPress(username: String, password: String) {
+
+        if (username == "zohebaziz" && password == "password") {
+
+            zebViewState = zebViewState.copy(validLogin = true)
+        }
+    }
+
     suspend fun zebAsynchronousFunction() {
 
         zebViewState = zebViewState.copy(loading = true)
