@@ -13,6 +13,9 @@
             android:name=".dan.fragments.DanFragmentsActivity"
             android:exported="true" />
         <activity
+            android:name=".zeb.ZebLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".dan.DanActivity"
             android:exported="true" />
         <activity
