@@ -10,38 +10,38 @@
         android:id="@+id/bottomText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="bottom text"
+        android:text="@string/bottom_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/topText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="top text"
+        android:text="@string/top_text"
         app:layout_constraintBottom_toTopOf="@+id/bottomText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/middleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="middle text"
+        android:text="@string/middle_text"
         app:layout_constraintBottom_toTopOf="@+id/bottomText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topText"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/topText" />
 
 
     <Button
         android:id="@+id/bottomerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="even bottomer button"
+        android:text="@string/even_bottomer_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,11 +51,21 @@
         android:id="@+id/topperButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="even topper button"
+        android:text="@string/even_topper_button"
         app:layout_constraintBottom_toTopOf="@+id/topText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottomestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bottomest_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomerButton" />
 
     <ProgressBar
         android:id="@+id/progressThat"

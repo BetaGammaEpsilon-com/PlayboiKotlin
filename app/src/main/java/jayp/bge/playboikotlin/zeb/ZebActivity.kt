@@ -1,12 +1,12 @@
 package jayp.bge.playboikotlin.zeb
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.viewModels
 import androidx.core.view.isVisible
-import jayp.bge.playboikotlin.R
 import jayp.bge.playboikotlin.databinding.ActivityZebBinding
+import jayp.bge.playboikotlin.zeb.fragments.ZebFragmentActivity
 
 class ZebActivity : AppCompatActivity() {
 
@@ -18,6 +18,11 @@ class ZebActivity : AppCompatActivity() {
 
         binding = ActivityZebBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.bottomestButton.setOnClickListener {
+            val intent = Intent(this, ZebLoginActivity::class.java)
+            startActivity(intent)
+        }
 
         binding.bottomerButton.setOnClickListener {
             viewModel.onButtonPress()
