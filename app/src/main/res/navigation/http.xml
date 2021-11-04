@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/http"
+    app:startDestination="@id/fragment_http">
+
+    <fragment
+        android:id="@+id/fragment_http_sub"
+        android:name="jayp.bge.playboikotlin.josh.fragments.http.HttpSubFragment"
+        tools:layout="@layout/fragment_http">
+        <argument
+            android:name="text"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_http"
+        android:name="jayp.bge.playboikotlin.josh.fragments.http.HttpFragment"
+        tools:layout="@layout/fragment_http">
+
+        <action
+            android:id="@+id/action_fragment_http_to_fragment_http_sub"
+            app:destination="@id/fragment_http_sub" />
+    </fragment>
+
+</navigation>
