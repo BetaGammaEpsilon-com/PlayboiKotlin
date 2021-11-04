@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/robbie_web_loader"
+        android:icon="@drawable/ic_leaf"
+        android:title="@string/title_robbie_web_loader" />
+    <item
+        android:id="@+id/robbie_list"
+        android:icon="@drawable/ic_tinder"
+        android:title="@string/title_robbie_list" />
+
+</menu>
