@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hurricane_kotalina"
+    app:startDestination="@id/fragment_hurricane_kotalina_top">
+
+    <fragment
+        android:name="jayp.bge.playboikotlin.zeb.fragments.hurricankotalina.HurricaneKotalinaFragment"
+        android:id="@+id/fragment_hurricane_kotalina_top"
+        tools:layout="@layout/fragment_hurricane_kotalina">
+
+        <action
+            android:id="@+id/action_fragment_hurricane_kotalina_top_to_fragment_hurricane_kotalina_sub"
+            app:destination="@id/fragment_hurricane_kotalina_sub" />
+    </fragment>
+
+    <fragment
+        android:name="jayp.bge.playboikotlin.zeb.fragments.hurricankotalina.HurricaneKotalinaSubFragment"
+        android:id="@+id/fragment_hurricane_kotalina_sub"
+        tools:layout="@layout/fragment_hurricane_kotalina_sub">
+
+        <argument
+            android:name="kotalinaText"
+            app:argType="string"
+            app:nullable="false"/>
+
+    </fragment>
+
+</navigation>
