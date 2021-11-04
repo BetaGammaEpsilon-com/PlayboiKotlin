@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlayboiKotlin">
         <activity
+            android:name=".robbie.fragments.RobbieFragmentsActivity"
+            android:exported="false" />
+        <activity
             android:name=".dan.fragments.DanFragmentsActivity"
             android:exported="true" />
         <activity

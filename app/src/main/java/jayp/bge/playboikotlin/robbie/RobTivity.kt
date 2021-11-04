@@ -1,10 +1,12 @@
 package jayp.bge.playboikotlin.robbie
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import jayp.bge.playboikotlin.databinding.ActivityRobTivityBinding
+import jayp.bge.playboikotlin.robbie.fragments.RobbieFragmentsActivity
 
 class RobTivity : AppCompatActivity() {
 
@@ -19,6 +21,11 @@ class RobTivity : AppCompatActivity() {
         // call my button press
         binding.newRobbieButton.setOnClickListener {
             viewModel.onButtonClick()
+        }
+
+        binding.robbieFragmentButton.setOnClickListener {
+            val fragmentIntent = Intent(this, RobbieFragmentsActivity::class.java)
+            startActivity(fragmentIntent)
         }
 
         // on long press remove a button press
