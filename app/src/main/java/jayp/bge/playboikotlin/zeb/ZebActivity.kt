@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import jayp.bge.playboikotlin.databinding.ActivityZebBinding
+import jayp.bge.playboikotlin.zeb.fragments.ZebFragmentActivity
 
 class ZebActivity : AppCompatActivity() {
 

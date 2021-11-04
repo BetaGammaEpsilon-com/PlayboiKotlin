@@ -4,8 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
-import jayp.bge.playboikotlin.MainActivity
 import jayp.bge.playboikotlin.databinding.ActivityZebLoginBinding
+import jayp.bge.playboikotlin.zeb.fragments.ZebFragmentActivity
 
 class ZebLoginActivity : AppCompatActivity() {
 
@@ -23,7 +23,7 @@ class ZebLoginActivity : AppCompatActivity() {
 
             if(it.validLogin) {
 
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this@ZebLoginActivity, ZebFragmentActivity::class.java)
                 startActivity(intent)
             }
         }
