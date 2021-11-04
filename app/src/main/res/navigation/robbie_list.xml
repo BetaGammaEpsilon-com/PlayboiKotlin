@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/robbie_list"
+    app:startDestination="@id/fragment_robbie_list">
+
+    <fragment
+        android:id="@+id/fragment_robbie_sub_list"
+        android:name="jayp.bge.playboikotlin.robbie.fragments.list.RobbieSubListFragment"
+        tools:layout="@layout/fragment_robbie_sub_list">
+        <argument
+            android:name="inputText"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_robbie_list"
+        android:name="jayp.bge.playboikotlin.robbie.fragments.list.FragmentRobbieListFragment"
+        tools:layout="@layout/fragment_robbie_list">
+        <action
+            android:id="@+id/action_fragment_robbie_list_to_fragment_robbie_sub_list"
+            app:destination="@id/fragment_robbie_sub_list" />
+    </fragment>
+
+</navigation>
