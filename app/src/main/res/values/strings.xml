@@ -20,4 +20,11 @@
     <string name="web_loader">Web Loader</string>
     <string name="list_button">List Button</string>
     <string name="sub_fragment">sub fragment</string>
+    <string name="rip">rip</string>
+    <string name="even_bottomer_button">even bottomer button</string>
+    <string name="even_topper_button">even topper button</string>
+    <string name="bottomest_button">bottomest button</string>
+    <string name="middle_text">middle text</string>
+    <string name="top_text">top text</string>
+    <string name="bottom_text">bottom text</string>
 </resources>

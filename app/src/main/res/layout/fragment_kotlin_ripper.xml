@@ -21,6 +21,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ripperText"
-        android:text="rip"/>
+        android:text="@string/rip"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

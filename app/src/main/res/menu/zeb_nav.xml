@@ -9,6 +9,6 @@
     <item
         android:id="@+id/hurricane_kotalina"
         android:icon="@drawable/ic_kotalina"
-        android:title="Hurrican Kotalina"/>
+        android:title="Hurricane Kotalina"/>
 
 </menu>

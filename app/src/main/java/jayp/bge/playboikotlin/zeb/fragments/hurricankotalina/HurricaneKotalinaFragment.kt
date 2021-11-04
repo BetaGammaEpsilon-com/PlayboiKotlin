@@ -16,7 +16,7 @@ class HurricaneKotalinaFragment: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentHurricaneKotalinaBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
