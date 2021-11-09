@@ -5,13 +5,55 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/kotalinaText"
+        android:id="@+id/kotalina_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sub"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="argument 1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/kotalina_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/kotalina_request"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotalina_scrolling" />
+
+    <ScrollView
+        android:id="@+id/kotalina_scrolling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/kotalina_request"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotalina_text">
+
+        <TextView
+            android:id="@+id/kotalina_response"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/kotalina_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/kotalina_request"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotalina_text" />
+
+    <Button
+        android:id="@+id/kotalina_request"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="load"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
