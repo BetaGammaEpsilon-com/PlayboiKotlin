@@ -29,4 +29,5 @@
     <string name="middle_text">middle text</string>
     <string name="top_text">top text</string>
     <string name="bottom_text">bottom text</string>
+    <string name="click_me_for_web_response">Click me for web response</string>
 </resources>
