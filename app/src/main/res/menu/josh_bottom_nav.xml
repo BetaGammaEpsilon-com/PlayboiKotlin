@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/http"
+        android:icon="@drawable/ic_ahttp"
+        android:title="@string/title_http" />
+    <item
+        android:id="@+id/https"
+        android:icon="@drawable/ic_ahttps"
+        android:title="@string/title_https" />
+
+</menu>
