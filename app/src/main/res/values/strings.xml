@@ -30,4 +30,6 @@
     <string name="top_text">top text</string>
     <string name="bottom_text">bottom text</string>
     <string name="click_me_for_web_response">Click me for web response</string>
+    <string name="arg1">arg1</string>
+    <string name="arg2">arg2</string>
 </resources>
