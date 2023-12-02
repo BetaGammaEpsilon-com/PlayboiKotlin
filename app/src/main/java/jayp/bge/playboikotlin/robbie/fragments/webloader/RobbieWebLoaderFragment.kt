@@ -17,6 +17,7 @@ class RobbieWebLoaderFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentRobbieWebLoaderBinding.inflate(layoutInflater, container, false)
+        // where the fcuck arer my hooks??
         return binding.root
     }
 
