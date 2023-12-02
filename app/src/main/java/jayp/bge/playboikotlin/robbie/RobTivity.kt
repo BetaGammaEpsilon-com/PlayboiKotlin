@@ -40,7 +40,7 @@ class RobTivity : AppCompatActivity() {
             it.robbieString?.let {
                 binding.textView2.text = it
             } ?: run {
-                binding.textView2.text = "robbie text set to null!"
+                binding.textView2.text = "robbie text set to null! lol!"
             }
 
             if (it.loading) {
